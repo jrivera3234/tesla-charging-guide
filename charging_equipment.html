@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charging Equipment</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/tesla-logo.png" alt="Tesla Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charger_types.html">Charger Types</a></li>
+                <li><a href="charging_equipment.html">Charging Equipment</a></li>
+                <li><a href="charging_locations.html">Charging Locations</a></li>
+                <li><a href="charging_speeds.html">Charging Speeds</a></li>
+                <li><a href="charging_tips.html">Charging Tips</a></li>
+                <li><a href="safety_and_maintenance.html">Safety & Maintenance</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <h2>Charging Equipment</h2>
+        <p>Explore the essential charging hardware for your Tesla, including Tesla Wall Connectors, mobile connectors, and adapter usage.</p>
+        
+        <!-- Tesla Wall Connectors -->
+        <div class="charging-item">
+            <div class="overlay"> <!-- This div contains the text -->
+                <h3>Tesla Wall Connectors</h3><br>
+                <br><p>Learn about Tesla Wall Connectors for faster home charging and installation guidelines.</p>
+            </div>
+            <img src="img/tesla-wall-connector.jpg" alt="Tesla Wall Connector">
+        </div>
+        
+        <!-- Mobile Connectors -->
+        <div class="charging-item">
+            <div class="overlay"> <!-- This div contains the text -->
+                <h3>Mobile Connectors</h3><br>
+                <br><p>Discover how to use the Tesla Mobile Connector for charging on the go and its compatibility with different outlets.</p>
+            </div>
+            <img src="img/mobile-connector.jpg" alt="Mobile Connector">
+        </div>
+        
+        <!-- Adapter Usage -->
+        <div class="charging-item">
+            <div class="overlay"> <!-- This div contains the text -->
+                <h3>Adapter Usage</h3><br>
+                <br><p>Get insights into using adapters for charging at various types of charging stations and outlets.</p>
+            </div>
+            <img src="img/adapter-usage.jpg" alt="Adapter Usage">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Tesla Charging Guide</p>
+    </footer>
+
+    <!-- jQuery script to show/hide text on hover -->
+    <script>
+        $(document).ready(function () {
+            $('.charging-item').hover(function () {
+                // Show the text overlay on hover
+                $(this).find('.overlay').css('opacity', '1');
+            }, function () {
+                // Hide the text overlay when the mouse leaves
+                $(this).find('.overlay').css('opacity', '0');
+            });
+        });
+    </script>
+</body>
+</html>

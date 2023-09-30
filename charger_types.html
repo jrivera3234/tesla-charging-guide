@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Tesla Chargers</title>
+    <link rel="stylesheet" href="css/styles.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/tesla-logo.png" alt="Tesla Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charger_types.html">Charger Types</a></li>
+                <li><a href="charging_equipment.html">Charging Equipment</a></li>
+                <li><a href="charging_locations.html">Charging Locations</a></li>
+                <li><a href="charging_speeds.html">Charging Speeds</a></li>
+                <li><a href="charging_tips.html">Charging Tips</a></li>
+                <li><a href="safety_and_maintenance.html">Safety & Maintenance</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <h2>Types of Tesla Chargers</h2>
+        <p>Explore the various Tesla charging solutions available to you, from home charging setups to Superchargers and destination chargers.</p>
+        
+        <div class="charger-type">
+            <img src="img/home-charging.jpg" alt="Home Charging" class="enlarge-image">
+            <h3>Home Charging Setups</h3>
+            <p>Learn how to set up a home charging station for convenient overnight charging.</p>
+        </div>
+        
+        <div class="charger-type">
+            <img src="img/superchargers.jpg" alt="Superchargers" class="enlarge-image">
+            <h3>Tesla Superchargers</h3>
+            <p>Discover Tesla's Supercharger network for rapid charging on long trips.</p>
+        </div>
+        
+        <div class="charger-type">
+            <img src="img/destination-charger.jpg" alt="Destination Chargers" class="enlarge-image">
+            <h3>Destination Chargers</h3>
+            <p>Find out about destination charging stations often located at hotels and restaurants.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Tesla Charging Guide</p>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            // Select all images with the class 'enlarge-image'
+            $('.enlarge-image').hover(function () {
+                // Enlarge the image on hover
+                $(this).css('transform', 'scale(1.1)');
+                $(this).css('transition', 'transform 0.3s ease');
+            }, function () {
+                // Shrink the image back to its original size on hover out
+                $(this).css('transform', 'scale(1)');
+            });
+        });
+    </script>
+    
+</body>
+</html>
